@@ -1,6 +1,11 @@
+/*
 let apiKey = 'https://ulvis.net/api.php?url=YOUR-LONG-URL&custom=YOUR-CUSTOM-NAME&private=1';
 
-
+*/
+let apitiny = 'GX8cS2kQW8htYIhafae7gNrSYw72cAV1rxW1H3hRXwfsX0gUNMgPVLWLJROT';
+let urlInput = document.querySelector('#urlInput');
+let btnInput = document.querySelector('#btnInput')
+let inputGenerate = document.querySelector('#inputGenerate');
 
 let hamburger = document.querySelector('#hamburger');
 
@@ -13,10 +18,26 @@ document.onclick = e =>{
   }
 }
 
-
 hamburger.addEventListener('click', () =>{
     hamburger.classList.toggle('active');
     sidebar.classList.toggle('active');
   });
+
+
+
+
+btnInput.addEventListener('click', getMyLink);
+
+async function getMyLink() {
+ 
+  let link = urlInput.value;
+  
+  let apiKey = await fetch(`https://ulvis.net/api.php?url=${link}`);
+  
+  let data = await apiKey.text();
+  
+  console.log(data);
+
+}
 
 

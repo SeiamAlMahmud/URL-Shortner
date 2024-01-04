@@ -5,7 +5,7 @@
 }
 
 body {
-   background: seagreen;
+   background: seagreenj;
 }
 
 a{
@@ -53,7 +53,7 @@ li{
 }
 
 .bar{
-  width: 25px;
+  width: 28px;
   height: 3px;
   background: #fff;
   margin: 5px;
@@ -113,3 +113,129 @@ border: 1px solid rgba(0, 0, 0, 0.59);
 }
 
 }
+
+
+
+  /* ###### Site Details Section ##### */
+  
+  
+  
+.container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  padding: 0 2rem;
+  text-align: center;
+  margin: 0 auto;
+  background: #9F9F9FBA;
+  
+}
+
+
+.box1{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.box1 h1{
+  position: absolute;
+  top: 2.8rem;
+  font-size: 60px;
+  text-align: left;
+  font-weight: 700;
+  text-transform: capitalize
+}
+.box1 h1 span{
+  color: mediumvioletred;
+}
+
+.box1 p{
+  font-weight: 500;
+  font-size: 19px;
+  position: absolute;
+  top: 12rem;
+  margin: 0 auto;
+  text-align: left;
+}
+.box2 img{
+  width: 70%;
+  margin-top: -3rem;
+}
+
+
+
+
+.url__container{
+  padding: 1rem 2rem;
+  text-align: center;
+  background: #972424BA;
+  padding-bottom: 3rem;
+}
+
+.txt h3{
+  font-size: 43px;
+  margin-bottom: 2rem;
+    color: #fff;
+
+}
+
+.inputBox{
+  display: flex;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.inputBox input{
+  
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid #000;
+      padding: 0.8rem 0.5rem;
+      width: 20rem;
+
+}
+
+#btnInput{
+  padding: 0.8rem 1rem;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  background: mediumvioletred;
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.24);
+  -moz-box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 10px 10px 15px 2px rgba(0, 0, 0, 0.24);
+  transition:.3s ease-in-out;
+}
+
+.line{
+  width: 100%;
+  height: 2px;
+  background: white;
+  margin-top: 1rem;
+ 
+}
+
+#btnInput:hover{
+  background: #FF1EA9;
+}
+
+.short__url{
+  padding-top: 1rem;
+}
+.box{
+  display: flex;
+  justify-content: center;
+   align-items: center;
+  gap: 1rem;
+}
+
+.box input{
+  padding: 0.8rem 0.5rem;
+  border-radius: 17px;
+  margin: 0 20px;
+  width: 20rem;
+}
+
