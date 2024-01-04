@@ -36,8 +36,11 @@ async function getMyLink() {
   
   let data = await apiKey.text();
   
-  console.log(data);
-
+  inputGenerate.value = data;
+  
 }
 
-
+function copy() {
+  inputGenerate.select();
+  document.execCommand("copy");
+}
