@@ -32,7 +32,7 @@ async function getMyLink() {
  
   let link = urlInput.value;
   
-  let apiKey = await fetch(`https://ulvis.net/api.php?url=${link}`);
+  let apiKey = await fetch(`http://tinyurl.com/api-create.php?url=${link}`);
   
   let data = await apiKey.text();
   
